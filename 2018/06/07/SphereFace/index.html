@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="paper,face," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2018/06/index.html">
+<meta name="description" content="SphereFace: Deep Hypersphere Embedding for Face RecognitionPaper: https://arxiv.org/abs/1704.08063 IntroductionThis paper propose a new loss function to do face recognition, which called A-Softmax (An">
+<meta name="keywords" content="paper,face">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SphereFace">
+<meta property="og:url" content="http://yoursite.com/2018/06/07/SphereFace/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="SphereFace: Deep Hypersphere Embedding for Face RecognitionPaper: https://arxiv.org/abs/1704.08063 IntroductionThis paper propose a new loss function to do face recognition, which called A-Softmax (An">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-06-14T15:59:25.972Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="SphereFace">
+<meta name="twitter:description" content="SphereFace: Deep Hypersphere Embedding for Face RecognitionPaper: https://arxiv.org/abs/1704.08063 IntroductionThis paper propose a new loss function to do face recognition, which called A-Softmax (An">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2018/06/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/07/SphereFace/"/>
 
 
 
 
 
-  <title>Archive | Hexo</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <title>SphereFace | Hexo</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-archive">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,74 +219,138 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        Um..! 1 post. Keep on posting.
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/07/SphereFace/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/06/07/SphereFace/" itemprop="url">
-              
-                <span itemprop="name">SphereFace</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">SphereFace</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-07T22:13:49+08:00"
-              content="2018-06-07" >
-          06-07
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-07T22:13:49+08:00">
+                2018-06-07
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="SphereFace-Deep-Hypersphere-Embedding-for-Face-Recognition"><a href="#SphereFace-Deep-Hypersphere-Embedding-for-Face-Recognition" class="headerlink" title="SphereFace: Deep Hypersphere Embedding for Face Recognition"></a>SphereFace: Deep Hypersphere Embedding for Face Recognition</h1><p>Paper: <a href="https://arxiv.org/abs/1704.08063" target="_blank" rel="noopener">https://arxiv.org/abs/1704.08063</a></p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This paper propose a new loss function to do face recognition, which called <em>A-Softmax</em> (Angular Softmax). Paper modified softmax and add a angular parameter $m$.</p>
+<p>As most loss funtion in face recognition, A-softmax can learn <strong>discriminative</strong> face features. The final purpose is minimal interclass distance is larger than maximal intra-class distance. With proposed parameter $m$, we can control the margin betwenn different classes.</p>
+<h2 id="Basic-idea"><a href="#Basic-idea" class="headerlink" title="Basic idea"></a>Basic idea</h2><p>Softmax is essentially an exponential transformation (ignore the denominator which used to normalization):</p>
+<p>$$\frac{e^{z_j}}{\sum_ke^{z_k}}$$<br>$z_j$ usually computed by a dense layer:<br>$$z_j={\boldsymbol{W}}\boldsymbol{x}+b$$</p>
+<p>For simplicity, consider $\boldsymbol{x}$ is a 1-d vector (batch = 1), and $\boldsymbol{W}$ is a </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/paper/" rel="tag"># paper</a>
+          
+            <a href="/tags/face/" rel="tag"># face</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
-    </div>
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -289,6 +358,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -309,8 +382,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -361,6 +443,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SphereFace-Deep-Hypersphere-Embedding-for-Face-Recognition"><span class="nav-number">1.</span> <span class="nav-text">SphereFace: Deep Hypersphere Embedding for Face Recognition</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-idea"><span class="nav-number">1.2.</span> <span class="nav-text">Basic idea</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -494,6 +592,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
